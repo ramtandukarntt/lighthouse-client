@@ -1,4 +1,4 @@
-module github.com/jenkins-x/lighthouse-client
+module github.com/ramtandukarntt/lighthouse-client
 
 require (
 	github.com/Azure/go-autorest v14.2.0+incompatible
@@ -7,7 +7,7 @@ require (
 	github.com/google/go-cmp v0.5.4
 	github.com/gorilla/sessions v1.2.0
 	github.com/h2non/gock v1.0.9
-	github.com/jenkins-x/go-scm v1.5.216
+	github.com/ramtandukarntt/go-scm v1.5.217
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.8.0
 	github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
@@ -27,7 +27,8 @@ require (
 )
 
 replace (
-	github.com/tektoncd/pipeline => github.com/jenkins-x/pipeline v0.3.2-0.20210118090417-1e821d85abf6
+        github.com/jenkins-x/go-scm => github.com/ramtandukarntt/go-scm v1.5.217
+	github.com/tektoncd/pipeline => github.com/ramtandukarntt/pipeline v0.3.2-0.20210118090417-1e821d85abf6
 	// gomodules.xyz breaks in Athens proxying
 	gomodules.xyz/jsonpatch/v2 => github.com/gomodules/jsonpatch/v2 v2.1.0
 	k8s.io/api => k8s.io/api v0.20.2
